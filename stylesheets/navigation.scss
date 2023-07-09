@@ -1,0 +1,84 @@
+.list-controls {
+  margin-top: 0;
+}
+
+.navigation-container #navigation-bar {
+  display: none;
+}
+
+.navigation-container .navigation-controls {
+  margin-left: auto;
+}
+
+// Add-to-sidebar button
+.navigation-container .add-to-sidebar {
+  margin-left: 0.5em;
+}
+
+// Don't show tag info, except for admins
+body:not(.staff) #show-tag-info {
+  display: none;
+}
+
+// Breadcrumbs
+.navigation-container .category-breadcrumb {
+  //bit of a hack, disable margins on li items and set them on the nested element (category-drop). otherwise margins will be set though we hide the nested element
+  li {
+    margin: 0;
+  }
+
+  .category-drop {
+    margin-right: 0.5em;
+  }
+
+  // Only show selected content in breadcrumbs
+  .combo-box:not(.has-selection) {
+    display: none;
+  }
+
+  // Disable drop-downs
+  .combo-box.has-selection .combo-box-header {
+    background: transparent;
+    border: none;
+    pointer-events: none;
+
+    .caret-icon {
+      display: none;
+    }
+
+    // Category styles
+    &.category-drop-header .badge-wrapper {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--d-sidebar-section-link-prefix-margin-right);
+    }
+
+    &.category-drop-header .badge-category-bg {
+      width: 0.8em;
+      height: 0.8em;
+    }
+
+    &.category-drop-header .category-name {
+      font-size: var(--d-sidebar-section-link-prefix-width);
+      color: var(--primary-high);
+      font-weight: 600;
+    }
+
+    // Tag styles
+    &.tag-drop-header .selected-name {
+      font-size: var(--d-sidebar-section-link-prefix-width);
+      color: var(--primary-high);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: flex-start;
+      gap: var(--d-sidebar-section-link-prefix-margin-right);
+
+      &:before {
+        content: url($iconTag);
+        width: calc(var(--d-sidebar-section-link-prefix-width) * 0.8); //same calc as on sidebar
+        height: calc(var(--d-sidebar-section-link-prefix-width) * 0.8);
+        padding-top: 2px; //can't really get aligned with category bullets otherwise
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+:root {
+  --d-sidebar-header-color: var(--primary);
+  --d-sidebar-link-color: var(--primary);
+}
+
+// Container
+.sidebar-wrapper {
+  background-color: transparent;
+}
+
+// Headers
+.sidebar-section-wrapper .sidebar-section-header-text {
+}
+
+// Links
+.sidebar-section-link-wrapper .sidebar-section-link,
+.discourse-no-touch .sidebar-section-wrapper .sidebar-section-header-wrapper {
+  &:hover {
+    background-color: var(--primary-200);
+  }
+  &.active {
+    background-color: var(--primary-200);
+    color: var(--d-sidebar-link-color);
+  }
+}
+
+// Footer
+.sidebar-footer-wrapper,
+.sidebar-footer-wrapper .sidebar-footer-container,
+.sidebar-footer-wrapper .sidebar-footer-container:before {
+  background: transparent;
+}
+
+// Chat
+#sidebar-section-content-chat-channels .sidebar-section-link-prefix.icon .d-icon {
+  color: var(--d-sidebar-link-icon-color);
+}

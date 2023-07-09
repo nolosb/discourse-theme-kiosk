@@ -1,0 +1,16 @@
+@import 'header';
+
+html {
+  font-size: 17px;
+}
+
+body.navigation-topics .navigation-container {
+  display: none; //we have nothing to show, but it adds a margin
+}
+
+//Desktop avatars
+.d-header-icons .icon img.avatar,
+.topic-list img.avatar {
+  width: $avatar_size !important;
+  height: $avatar_size !important;
+}

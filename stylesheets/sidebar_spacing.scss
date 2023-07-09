@@ -1,0 +1,41 @@
+:root {
+  --d-sidebar-width: 260px;
+  --d-sidebar-row-horizontal-padding: 1rem;
+  --d-sidebar-row-height: 3em;
+  --d-sidebar-section-link-prefix-width: 1.2rem;
+  --d-sidebar-section-link-prefix-margin-right: 1rem;
+}
+// Section Headers
+.sidebar-section-wrapper .sidebar-section-header-wrapper {
+  border-radius: var(--d-button-border-radius);
+  margin: 0;
+  padding-top: 1.35rem;
+  padding-bottom: 1.35rem;
+}
+// Section Links
+.sidebar-section-link-wrapper .sidebar-section-link {
+  border-radius: var(--d-button-border-radius);
+  margin: 0;
+  padding-top: 1.35rem;
+  padding-bottom: 1.35rem;
+}
+// Indent section links for categories and tags
+#sidebar-section-content-categories,
+#sidebar-section-content-tags {
+  .sidebar-section-link-wrapper .sidebar-section-link {
+    margin: 0 0 0 1.5rem;
+  }
+}
+// Between Links
+.sidebar-section-content {
+  li + li {
+    margin-top: 3px;
+  }
+}
+// Between Sections
+.sidebar-sections .sidebar-section {
+  margin-bottom: 0rem;
+}
+.sidebar-section-wrapper .sidebar-section-content {
+  padding-bottom: 0;
+}

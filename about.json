@@ -1,0 +1,18 @@
+{
+  "name": "Kiosk",
+  "about_url": null,
+  "license_url": null,
+  "assets": {
+    "iconCategories": "assets/bring-forward-regular.svg",
+    "iconTags": "assets/tags-solid.svg",
+    "iconTag": "assets/tag-solid.svg"
+  },
+  "components": [
+    "https://github.com/discourse/discourse-color-scheme-toggle.git",
+    "https://github.com/discourse/discourse-avatar-component.git",
+    "https://github.com/discourse/discourse-header-search.git",
+    "https://github.com/hnb-ku/discourse-new-topic-button-theme-component.git",
+    "https://github.com/nolosb/discourse-panels.git",
+    "https://github.com/nolosb/discourse-rounded"
+  ]
+}

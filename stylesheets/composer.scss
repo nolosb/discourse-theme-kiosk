@@ -1,0 +1,15 @@
+#reply-control {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#reply-control .reply-area {
+  padding: 1rem;
+}
+
+.open .grippie {
+  background: var(--primary-300);
+  padding: 2px 0;
+  border-top-left-radius: var(--d-border-radius);
+  border-top-right-radius: var(--d-border-radius);
+}

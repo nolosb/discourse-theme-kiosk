@@ -1,0 +1,63 @@
+.d-header .btn-sidebar-toggle {
+  display: none;
+}
+
+//inset header contents
+.d-header .wrap > .contents {
+  padding: 0 0.5rem;
+}
+
+//Search
+.d-header .floating-search-input {
+  max-width: 360px;
+  margin: 0 auto 0 2rem;
+}
+
+.floating-search-input .search-banner-inner.wrap .search-menu .search-input,
+.floating-search-input .search-banner-inner.wrap .search-menu .search-input #search-term {
+  border-radius: var(--d-input-border-radius);
+  border: none;
+  background-color: var(--primary-50);
+  box-shadow: inset var(--shadow-header);
+}
+
+// Don't show search icon
+.header-dropdown-toggle.search-dropdown {
+  display: none;
+}
+
+//Header buttons
+html:not(.anon) .d-header .panel {
+  .header-buttons {
+    margin-top: 0;
+    margin-right: 1.5rem;
+    padding: 0;
+  }
+
+  .d-header-icons {
+    margin: 0;
+  }
+
+  .d-header-icons #current-user .icon {
+    padding: 0;
+    width: unset;
+    height: unset;
+  }
+
+  .d-header-icons .chat-header-icon {
+    display: none;
+  }
+}
+
+// Remove header avatar borders to prevent layout shifts
+.d-header .avatar,
+.drop-down-mode .d-header-icons .active .icon,
+.discourse-no-touch .d-header-icons .icon,
+.discourse-no-touch .d-header-icons .icon:hover,
+.discourse-no-touch .d-header-icons .icon:focus {
+  border: none;
+}
+
+.user-menu.revamped {
+  margin-top: 5px;
+}

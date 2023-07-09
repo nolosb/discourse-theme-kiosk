@@ -1,0 +1,7 @@
+edit_sidebar:
+  type: bool
+  default: false
+  description:
+    en: 'Show headers to edit sidebar sections'
+avatar-size:
+  default: '40px'

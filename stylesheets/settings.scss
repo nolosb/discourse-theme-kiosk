@@ -1,0 +1,13 @@
+// By default don't show sidebar headers, except on categories and tags section
+.sidebar-section-wrapper:not([data-section-name='categories']):not([data-section-name='tags']) {
+  .sidebar-section-header-wrapper {
+    display: none;
+  }
+}
+
+@if $edit_sidebar == 'true' {
+  // Show headers for admins
+  body.staff .sidebar-section-header-wrapper {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,42 @@
+// New create topic
+.header-buttons #new-create-topic {
+  border-radius: 50%;
+  width: $avatar_size;
+  height: $avatar_size;
+  background-color: var(--tertiary);
+
+  &:hover {
+    background-color: var(--tertiary-hover);
+  }
+
+  .d-icon {
+    margin: 0;
+    color: var(--secondary);
+  }
+
+  .d-button-label {
+    display: none;
+  }
+}
+
+// Navigation buttons
+.list-controls .btn {
+  background-color: transparent;
+
+  .d-icon {
+    font-size: var(--d-sidebar-section-link-prefix-width); //align size with sidebar
+  }
+
+  &:hover {
+    background-color: var(--primary-200);
+
+    .d-icon {
+      color: var(--primary-high);
+    }
+  }
+}
+
+// User page expand button
+button[aria-label='Collapse profile details'] {
+  display: none;
+}

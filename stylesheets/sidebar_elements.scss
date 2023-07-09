@@ -1,0 +1,56 @@
+// Container
+.sidebar-wrapper .sidebar-container {
+  border-right: none;
+}
+
+// Headers
+.sidebar-section-wrapper .sidebar-section-header-caret {
+  display: none;
+}
+
+// Custom sections
+.sidebar-section-header-text .d-icon-globe {
+  display: none;
+}
+
+// More Link
+.btn-flat.sidebar-more-section-links-details-summary {
+  display: none;
+}
+
+// Big icons
+.sidebar-section-link-wrapper .sidebar-section-link-prefix.icon svg {
+  font-size: var(--d-sidebar-section-link-prefix-width);
+}
+
+// Smaller icons on indented links
+#sidebar-section-content-categories,
+#sidebar-section-content-tags {
+  .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon {
+    margin-right: calc(var(--d-sidebar-section-link-prefix-margin-right) * 0.8);
+
+    svg {
+      font-size: calc(var(--d-sidebar-section-link-prefix-width) * 0.8);
+    }
+  }
+}
+
+// Add icons to categories and tags headers
+.sidebar-section-wrapper[data-section-name='categories'] .sidebar-section-header-wrapper:before {
+  content: url($iconCategories);
+  width: var(--d-sidebar-section-link-prefix-width);
+  height: var(--d-sidebar-section-link-prefix-width);
+  margin-right: var(--d-sidebar-section-link-prefix-margin-right);
+}
+
+.sidebar-section-wrapper[data-section-name='tags'] .sidebar-section-header-wrapper:before {
+  content: url($iconTags);
+  width: var(--d-sidebar-section-link-prefix-width);
+  height: var(--d-sidebar-section-link-prefix-width);
+  margin-right: var(--d-sidebar-section-link-prefix-margin-right);
+}
+
+// Only show inbox, no further folders
+#sidebar-section-content-messages li:not(:first-of-type) {
+  display: none;
+}
