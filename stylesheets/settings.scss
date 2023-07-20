@@ -1,13 +1,11 @@
-// By default don't show sidebar headers, except on categories and tags section
-.sidebar-section-wrapper:not([data-section-name='categories']):not([data-section-name='tags']) {
-  .sidebar-section-header-wrapper {
-    display: none;
-  }
+// By default don't show More linke
+.btn-flat.sidebar-more-section-links-details-summary {
+  display: none;
 }
 
 @if $edit_sidebar == 'true' {
-  // Show headers for admins
-  body.staff .sidebar-section-header-wrapper {
+  // Show more link for admins
+  body.staff .btn-flat.sidebar-more-section-links-details-summary {
     display: flex !important;
   }
 }

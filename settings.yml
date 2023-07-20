@@ -2,6 +2,6 @@ edit_sidebar:
   type: bool
   default: false
   description:
-    en: 'Show headers to edit sidebar sections'
+    en: 'Show More link to customize sidebar sections'
 avatar-size:
   default: '40px'

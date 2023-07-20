@@ -13,14 +13,16 @@
   display: none;
 }
 
-// More Link
-.btn-flat.sidebar-more-section-links-details-summary {
-  display: none;
-}
-
 // Big icons
 .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon svg {
   font-size: var(--d-sidebar-section-link-prefix-width);
+}
+
+// Don't show headers except for categories and tags
+.sidebar-section-wrapper:not([data-section-name='categories']):not([data-section-name='tags']) {
+  .sidebar-section-header-wrapper {
+    display: none;
+  }
 }
 
 // Smaller icons on indented links
