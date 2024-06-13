@@ -8,13 +8,22 @@
 }
 
 //Search
-.d-header .floating-search-input {
-  max-width: 360px;
-  margin: 0 auto 0 2rem;
+.search-header--visible .before-header-panel-outlet {
+  display: flex;
+  justify-content: space-between;
 }
 
-.floating-search-input .search-banner-inner.wrap .search-menu .search-input,
-.floating-search-input .search-banner-inner.wrap .search-menu .search-input #search-term {
+.floating-search-input-wrapper {
+  margin: 0 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+.d-header .floating-search-input {
+  width: 100%;
+  margin: 0;
+}
+
+.floating-search-input .search-banner-inner.wrap .search-menu .search-input {
   border-radius: var(--d-input-border-radius);
   border: none;
   background-color: var(--primary-50);
