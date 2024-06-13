@@ -8,8 +8,10 @@ export default {
       const applicationController = api.container.lookup('controller:application');
       applicationController.set('showSidebar', true);
 
-      // const userController = api.container.lookup("controller:user");
-      // userController.set("collapsedInfo", false);
+      api.modifyClass('controller:user', {
+        pluginId: 'kiosk',
+        collapsedInfo: false,
+      });
     });
   },
 };
