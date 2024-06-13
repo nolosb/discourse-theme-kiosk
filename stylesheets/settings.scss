@@ -1,11 +1,11 @@
-// By default don't show More linke
-.btn-flat.sidebar-more-section-links-details-summary {
+// By default don't show More link
+.sidebar-section-link-wrapper .sidebar-section-link.sidebar-more-section-links-details-summary {
   display: none;
 }
 
 @if $edit_sidebar == 'true' {
   // Show more link for admins
-  body.staff .btn-flat.sidebar-more-section-links-details-summary {
-    display: flex !important;
+  body.staff .sidebar-section-link-wrapper .sidebar-section-link.sidebar-more-section-links-details-summary {
+    display: flex;
   }
 }
