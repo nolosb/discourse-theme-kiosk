@@ -12,7 +12,7 @@
     "https://github.com/discourse/discourse-avatar-component.git",
     "https://github.com/discourse/discourse-header-search.git",
     "https://github.com/hnb-ku/discourse-new-topic-button-theme-component.git",
-    "https://github.com/nolosb/discourse-panels.git",
-    "https://github.com/nolosb/discourse-rounded"
+    "https://gitlab.com/manuelkostka/discourse-panels.git",
+    "https://gitlab.com/manuelkostka/discourse-rounded.git"
   ]
 }
