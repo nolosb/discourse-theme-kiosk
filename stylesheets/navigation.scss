@@ -46,39 +46,30 @@ body:not(.staff) #show-tag-info {
       display: none;
     }
 
-    // Category styles
-    &.category-drop-header .badge-wrapper {
+    // Category and Tag indicators
+    &.category-drop-header .badge-category,
+    &.tag-drop-header .selected-name {
       display: inline-flex;
       align-items: center;
       gap: var(--d-sidebar-section-link-prefix-margin-right);
     }
 
-    &.category-drop-header .badge-category-bg {
-      width: 0.8em;
-      height: 0.8em;
+    &.category-drop-header .badge-category__name,
+    &.tag-drop-header .selected-name .name {
+      font-size: 17px;
+      color: var(--d-sidebar-link-color);
     }
 
-    &.category-drop-header .category-name {
-      font-size: var(--d-sidebar-section-link-prefix-width);
-      color: var(--primary-high);
-      font-weight: 600;
+    &.category-drop-header .badge-category:before {
+      width: calc(var(--d-sidebar-section-link-prefix-width) * 0.8);
+      height: calc(var(--d-sidebar-section-link-prefix-width) * 0.8);
     }
 
-    // Tag styles
-    &.tag-drop-header .selected-name {
-      font-size: var(--d-sidebar-section-link-prefix-width);
-      color: var(--primary-high);
-      font-weight: 600;
-      display: inline-flex;
-      align-items: flex-start;
-      gap: var(--d-sidebar-section-link-prefix-margin-right);
-
-      &:before {
-        content: url($iconTag);
-        width: calc(var(--d-sidebar-section-link-prefix-width) * 0.8); //same calc as on sidebar
-        height: calc(var(--d-sidebar-section-link-prefix-width) * 0.8);
-        padding-top: 2px; //can't really get aligned with category bullets otherwise
-      }
+    &.tag-drop-header .selected-name:before {
+      content: url($iconTag);
+      width: calc(var(--d-sidebar-section-link-prefix-width) * 0.8);
+      height: calc(var(--d-sidebar-section-link-prefix-width) * 0.8);
+      margin-top: -3px; //fix alignment
     }
   }
 }
