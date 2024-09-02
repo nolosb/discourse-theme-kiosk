@@ -71,7 +71,7 @@ export default class AddToSidebar extends Component {
       })
       .catch((error) => {
         // eslint-disable-next-line no-console
-        console.error('Error updating sidebar:', error);
+        console.error('Kiosk Theme: Error updating sidebar:', error);
         this.saved = false;
       })
       .finally(() => {});
