@@ -19,7 +19,10 @@
 }
 
 // Don't show headers except for categories and tags
-.sidebar-section-wrapper:not([data-section-name='categories']):not([data-section-name='tags']) {
+.sidebar-sections:not(.admin-panel)
+  .sidebar-section-wrapper:not([data-section-name="categories"]):not(
+    [data-section-name="tags"]
+  ) {
   .sidebar-section-header-wrapper {
     display: none;
   }
