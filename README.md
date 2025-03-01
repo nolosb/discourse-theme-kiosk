@@ -6,4 +6,4 @@ A frictionless info-terminal theme for Discourse.
 
 Live site: https://kiosk.kostka.studio
 
-Discussion and feedback: https://meta.discourse.org/t/kiosk-a-self-service-theme/
+Discussion and feedback: https://meta.discourse.org/t/271092
