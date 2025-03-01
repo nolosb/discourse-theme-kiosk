@@ -2,6 +2,10 @@
 .sidebar-wrapper .sidebar-container {
   border-right: none;
 }
+.sidebar-section-wrapper {
+  border-bottom: none;
+  padding-block: 0;
+}
 
 // Headers
 .sidebar-section-wrapper .sidebar-section-header-caret {
@@ -41,14 +45,16 @@
 }
 
 // Add icons to categories and tags headers
-.sidebar-section-wrapper[data-section-name='categories'] .sidebar-section-header-wrapper:before {
+.sidebar-section-wrapper[data-section-name="categories"]
+  .sidebar-section-header-wrapper:before {
   content: url($iconCategories);
   width: var(--d-sidebar-section-link-prefix-width);
   height: var(--d-sidebar-section-link-prefix-width);
   margin-right: var(--d-sidebar-section-link-prefix-margin-right);
 }
 
-.sidebar-section-wrapper[data-section-name='tags'] .sidebar-section-header-wrapper:before {
+.sidebar-section-wrapper[data-section-name="tags"]
+  .sidebar-section-header-wrapper:before {
   content: url($iconTags);
   width: var(--d-sidebar-section-link-prefix-width);
   height: var(--d-sidebar-section-link-prefix-width);

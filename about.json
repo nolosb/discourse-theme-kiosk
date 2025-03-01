@@ -8,10 +8,9 @@
     "iconTag": "assets/tag-solid.svg"
   },
   "components": [
-    "https://github.com/discourse/discourse-color-scheme-toggle.git",
     "https://github.com/discourse/discourse-avatar-component.git",
     "https://github.com/discourse/discourse-header-search.git",
-    "https://github.com/hnb-ku/discourse-new-topic-button-theme-component.git",
+    "https://github.com/discourse/discourse-new-topic-button-theme-component.git",
     "https://gitlab.com/manuelkostka/discourse/helpers/panels.git",
     "https://gitlab.com/manuelkostka/discourse/helpers/rounded.git"
   ]

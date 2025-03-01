@@ -1,6 +1,6 @@
 # Kiosk
 
-A fast info-terminal theme for Discourse.
+A frictionless info-terminal theme for Discourse.
 
 ![image](https://github.com/nolosb/discourse-theme-kiosk/assets/26887899/8fc668a6-d760-496b-a44f-5890422d33ba)
 
